@@ -1,0 +1,340 @@
+body{
+    background-color: #2F303A;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+section, header, div{
+    color: #FFFFFF;
+}
+header #logo{
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    gap: 200px;
+    position: relative;
+    left: 100px;
+}
+header ul li{
+    justify-items: center;
+    left: 100px;
+}
+.head:nth-child(1){
+    align-items: start;
+}
+#log p{
+    display: flex;
+    position: relative;
+    top: 36px;
+    left: 100px;
+}
+/**/
+.parent{
+    display: flex;
+    position: relative;
+    top: -200px;
+}
+.music{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.cercle2 img {
+    display: flex;
+    position: relative;
+    top: -300px;
+    left: 20px;
+    z-index: -999;
+    width: 250px;
+  }
+  .cercle1 img {
+    display: flex;
+    position: relative;
+    top: 300px;
+    left: 350px;
+    width: 250px;
+  }
+  .cercle3 img {
+    display: flex;
+    position: absolute;
+    top: 800px;
+    left: 80%;
+  }
+/* .image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.photo{
+    align-self: flex-start;
+
+} */
+/* .music{
+align-content: flex-start;
+  position: relative;
+  left: 0;
+  margin-left: -1000px;
+} */
+.music button a{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+.music button{
+    position: relative;
+    top: 100px;
+}
+/**/
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+.features h1{
+    display: flex;
+  position: absolute;
+  top: 0;
+  align-self: center;
+  display: inline-flex;
+}
+.parent2{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    text-align: center;
+}
+.item1{
+    background-color: #202027;
+    width: 120px;
+    height: 120px;
+}
+.item1 img{
+    width: 50px;
+    position: relative;
+
+}
+.artistes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    top: 20px;
+}
+.albums{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    gap: 100px;
+}
+/**/
+.signup{
+    margin-top: 100px;
+    width: 100%;
+}
+.formulaire{
+    display: flex;
+  margin: 0;
+}
+form{
+    top: 100px;
+    background-color: #202027;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 20px;
+    top: 30px;
+    width: 400px;
+    height: 500px;
+
+}
+form button {
+    background-color: blue;
+    width: 70%;
+        height: 30px;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+  }
+label{
+    position: relative;
+    left: -30%;
+    top: 10%;
+
+}
+.formulaire input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        border: 1px solid blue;
+        background-color: #202027;
+        width: 70%;
+        height: 30px;
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+        top: 10%;
+    }
+    .music button {
+        background-color: blue;
+        width: 35%;
+        height: 54px;
+        border-radius: 10px 10px 10px 10px;
+        color: #FFFFFF;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+.signup{
+    display: flex;
+    justify-content: space-around;
+}
+/**/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    position: relative;
+    top: 180px;
+}
+.droite, .gauche{
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+}
+/* .gauche{
+    display: flex;
+    position: relative;
+    top: 10px;
+    gap: 100px;
+} */
+.gauche div{
+    display: flex;
+}
+.droite h1{
+    position: relative;
+    font-size: 50px;
+    top: 200px;
+}
+.droite span{
+    color: yellow;
+}
+/*Responsive*/
+@media screen and (max-width: 684px) {
+    .parent{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .music{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 300px;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .cercle2 img {
+        display: flex;
+        position: relative;
+        top: -300px;
+        left: 20px;
+        z-index: -999;
+        width: 250px;
+      }
+      .cercle1 img {
+        display: flex;
+        position: relative;
+        top: 300px;
+        left: 350px;
+        width: 250px;
+      }
+      .cercle3 img {
+        display: flex;
+        position: absolute;
+        top: 800px;
+        left: 80%;
+      }
+}
+
+@media screen and (max-width: 864px) {
+    .features{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    .features h1{
+        display: flex;
+        position: absolute;
+        top: -20%;
+        left: 30%;
+    }
+    .parent2{
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        text-align: center;
+    }
+    .item1{
+        display: flex;
+        top: 20px;
+        position: relative;
+    }
+    .item1{
+        background-color: #202027;
+        width: 120px;
+        height: 120px;
+    }
+    .item1 img{
+        width: 50px;
+        position: relative;
+    
+    }
+    .artistes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        top: 20px;
+    }
+    .albums{
+        display: flex;
+        width: 180px;
+        height: 180px;
+        gap: 100px;
+    }
+}
