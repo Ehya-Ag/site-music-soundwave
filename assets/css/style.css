@@ -97,12 +97,12 @@ align-content: flex-start;
   left: 0;
   margin-left: -1000px;
 } */
-.music button a{
+.music  a{
     color: #FFFFFF;
     font-size: 20px;
     text-decoration: none;
 }
-.music button{
+.music a{
     position: relative;
     top: 100px;
 }
@@ -139,14 +139,22 @@ align-content: flex-start;
 }
 .artistes{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  top: 20px;
+  left: 50px;
+  position: relative;
+
 }
 .albums{
     display: flex;
     width: 180px;
     height: 180px;
     gap: 100px;
+}
+#p{
+    top: 300px;
+  position: relative;
+  left: -727px;
 }
 /**/
 .signup{
@@ -171,7 +179,7 @@ form{
     height: 500px;
 
 }
-form button {
+form a {
     background-color: blue;
     width: 70%;
         height: 30px;
@@ -201,7 +209,7 @@ label{
         position: relative;
         top: 10%;
     }
-    .music button {
+    .music a {
         background-color: blue;
         width: 35%;
         height: 54px;
@@ -289,6 +297,15 @@ footer{
         top: 800px;
         left: 80%;
       }
+      header ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        gap: 100px;
+        position: relative;
+        left: 100px;
+      }
 }
 
 @media screen and (max-width: 864px) {
@@ -307,7 +324,7 @@ footer{
     }
     .parent2{
         display: flex;
-        gap: 80px;
+        gap: 30px;
         align-items: center;
         text-align: center;
     }
@@ -318,23 +335,25 @@ footer{
     }
     .item1{
         background-color: #202027;
-        width: 120px;
-        height: 120px;
+    width: 90px;
+    height: 90px;
     }
-    .item1 img{
-        width: 50px;
-        position: relative;
-    
-    }
+
     .artistes{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         top: 20px;
+        left: 0;
     }
     .albums{
         display: flex;
         width: 180px;
         height: 180px;
         gap: 100px;
+    }
+    #p{
+        top: 0;
+  position: relative;
+  left: 0;
     }
 }
